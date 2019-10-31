@@ -10,6 +10,8 @@ import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import com.example.namazandroidapp.R
 import com.example.namazandroidapp.presentation.mvpview.IBaseMvpView
+import com.example.namazandroidapp.presentation.ui.main.MainActivity
+import com.example.namazandroidapp.presentation.ui.navigation.TabManager
 import dagger.android.support.DaggerAppCompatActivity
 import moxy.MvpDelegate
 
@@ -17,7 +19,6 @@ abstract class BaseActivity : DaggerAppCompatActivity(), IBaseMvpView {
 
     private var navController: NavController? = null
     private var mvpDelegate: MvpDelegate<out BaseActivity>? = null
-
     private var toolbar: Toolbar? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -37,7 +38,7 @@ abstract class BaseActivity : DaggerAppCompatActivity(), IBaseMvpView {
         getMvpDelegate().onAttach()
     }
 
-    override fun onSaveInstanceState(outState: Bundle) {
+     override fun onSaveInstanceState(outState: Bundle) {
         super.onSaveInstanceState(outState)
         getMvpDelegate().onSaveInstanceState(outState)
         getMvpDelegate().onDetach()

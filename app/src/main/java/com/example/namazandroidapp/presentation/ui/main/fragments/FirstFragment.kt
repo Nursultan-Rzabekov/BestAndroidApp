@@ -2,6 +2,7 @@ package com.example.namazandroidapp.presentation.ui.main.fragments
 
 import android.os.Bundle
 import android.view.View
+import androidx.navigation.findNavController
 import com.example.namazandroidapp.R
 import com.example.namazandroidapp.presentation.mvpview.main.IFirstView
 import com.example.namazandroidapp.presentation.presenter.main.FirstPresenter
@@ -26,10 +27,9 @@ class FirstFragment : BaseFragment(), IFirstView {
     }
 
     override fun onNavigateToSecond() {
-        navigate(R.id.action_firstFragment_to_secondFragment)
+        view?.findNavController()!!.navigate(R.id.action_firstFragment_to_secondFragment)
     }
 
     @ProvidePresenter
     fun providePresenter(): FirstPresenter = presenter
-
 }
