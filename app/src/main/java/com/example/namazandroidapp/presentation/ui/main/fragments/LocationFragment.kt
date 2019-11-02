@@ -21,10 +21,6 @@ class LocationFragment: BaseFragment(), ILocationView {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        buttonNextPage.setOnClickListener {
-            val action = NavigationLocationGraphDirections.actionGlobalFirstFragment(1,"TimeFragment")
-            view.findNavController().navigate(action)
-        }
     }
 
 }

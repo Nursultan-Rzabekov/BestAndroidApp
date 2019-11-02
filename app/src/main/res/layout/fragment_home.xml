@@ -5,27 +5,70 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/message"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/title_home"
-        android:textSize="25sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="70dp"
+       android:layout_marginLeft="20dp"
+       android:layout_marginRight="20dp"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       android:orientation="vertical"
+       >
 
-    <Button
-        android:id="@+id/buttonNextPage"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:text="@string/next_page"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/message" />
+       <Button
+           android:id="@+id/books"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:textSize="20sp"
+           android:text="@string/books" />
+
+       <Button
+           android:id="@+id/kinds"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:textSize="20sp"
+           android:text="@string/kinds" />
+
+
+       <Button
+           android:id="@+id/namaz"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:textSize="20sp"
+           android:text="@string/namaz" />
+
+
+       <Button
+           android:id="@+id/ablution"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:textSize="20sp"
+           android:text="@string/ablution" />
+
+
+       <Button
+           android:id="@+id/azan"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:textSize="20sp"
+           android:text="@string/azan" />
+
+       <Button
+           android:id="@+id/dua"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:textSize="20sp"
+           android:text="@string/dua"/>
+
+       <Button
+           android:id="@+id/topic"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:textSize="20sp"
+           android:text="@string/topic"/>
+   </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

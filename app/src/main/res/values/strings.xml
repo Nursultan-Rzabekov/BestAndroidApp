@@ -16,4 +16,23 @@
 
     <string name="next_page">Next Page</string>
 
+
+    <string name="books">НАМАЗ КІТАБЫ</string>
+    <string name="kinds">НАМАЗ ТҮРЛЕРІ</string>
+    <string name="namaz">БЕЙНЕЛІ НАМАЗ</string>
+    <string name="ablution">ДӘРЕТ</string>
+    <string name="azan">АЗАН</string>
+    <string name="dua">СҮРЕЛЕР МЕН ДҰҒАЛАР</string>
+    <string name="topic">МАҚАЛАЛАР</string>
+    <string name="dua1">СҮРЕЛЕР</string>
+    <string name="dua2">ДҰҒАЛАР</string>
+    <string name="dua_1_1">ФАТИХА</string>
+    <string name="dua_1_2">КӘУСӘР</string>
+    <string name="dua_1_3">ЫҚЫЛАС</string>
+    <string name="dua_1_4">ФАЛАҚ</string>
+    <string name="dua_1_5">НАС</string>
+
+
+
+
 </resources>

@@ -20,10 +20,17 @@ class SecondFragment: BaseFragment(), ISecondView {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        f_second_btn_go_second.setOnClickListener { presenter.close() }
+//        f_second_btn_go_second.setOnClickListener {
+//            view.findNavController().navigateUp()
+//        }
+            //presenter.close() }
+
+        f_first_btn_go_second.setOnClickListener {
+            view.findNavController().navigateUp()
+        }
     }
 
     override fun onClose() {
-        view?.findNavController()!!.navigateUp()
+        //view?.findNavController()!!.navigateUp()
     }
 }

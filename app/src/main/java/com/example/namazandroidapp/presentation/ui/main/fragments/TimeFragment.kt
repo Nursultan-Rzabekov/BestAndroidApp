@@ -22,10 +22,6 @@ class TimeFragment: BaseFragment(), ITimeView {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        buttonNextPage.setOnClickListener {
-            val action = NavigationTimesGraphDirections.actionGlobalFirstFragment(1,"TimeFragment")
-            view.findNavController().navigate(action)
-        }
     }
 
 }

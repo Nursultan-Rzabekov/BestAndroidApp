@@ -18,10 +18,10 @@
             app:argType="string" />
 
         <action
-                android:id="@+id/action_firstFragment_to_secondFragment"
-                app:destination="@id/secondFragment"
-                app:popUpTo="@+id/firstFragment"
-                app:popUpToInclusive="true"/>
+            android:id="@+id/action_firstFragment_to_secondFragment"
+            app:destination="@id/secondFragment"
+            app:popUpTo="@+id/firstFragment"
+            app:popUpToInclusive="true" />
     </fragment>
 
 

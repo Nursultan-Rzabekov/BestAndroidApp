@@ -32,6 +32,10 @@ class MainActivity : BaseActivity(), IMainView, BottomNavigationView.OnNavigatio
         }
     }
 
+    override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
+        tabManager.onSaveInstanceState(outState)
+    }
 
     override fun onRestoreInstanceState(savedInstanceState: Bundle) {
         super.onRestoreInstanceState(savedInstanceState)

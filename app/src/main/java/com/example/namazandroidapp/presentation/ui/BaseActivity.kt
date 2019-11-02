@@ -38,11 +38,11 @@ abstract class BaseActivity : DaggerAppCompatActivity(), IBaseMvpView {
         getMvpDelegate().onAttach()
     }
 
-     override fun onSaveInstanceState(outState: Bundle) {
-        super.onSaveInstanceState(outState)
-        getMvpDelegate().onSaveInstanceState(outState)
-        getMvpDelegate().onDetach()
-    }
+//     override fun onSaveInstanceState(outState: Bundle) {
+//        super.onSaveInstanceState(outState)
+//        getMvpDelegate().onSaveInstanceState(outState)
+//        getMvpDelegate().onDetach()
+//    }
 
     override fun onStop() {
         super.onStop()

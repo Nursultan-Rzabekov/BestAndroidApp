@@ -4,15 +4,22 @@
     android:id="@+id/navigation_graph_main">
 
     <fragment
-        android:id="@+id/pageFragment"
-        android:name="com.example.namazandroidapp.presentation.ui.main.fragments.PageFragment"
-        android:label="PageFragment" >
+        android:id="@+id/firstFragment"
+        android:name="com.example.namazandroidapp.presentation.ui.main.fragments.FirstFragment"
+        android:label="FirstFragment"
+        >
+
         <argument
             android:name="pageNumber"
             app:argType="integer" />
         <argument
             android:name="pageParent"
             app:argType="string" />
+
+        <action
+            android:id="@+id/action_firstFragment_to_secondFragment"
+            app:destination="@id/secondFragment"
+            />
     </fragment>
 
 
@@ -22,9 +29,20 @@
         android:label="HomeFragment" />
 
 
+    <fragment
+        android:id="@+id/secondFragment"
+        android:name="com.example.namazandroidapp.presentation.ui.main.fragments.SecondFragment"
+        android:label="SecondFragment">
+
+        <action
+            android:id="@+id/action_secondFragment_to_FirstFragment"
+            app:destination="@id/firstFragment"
+            />
+    </fragment>
+
     <action
         android:id="@+id/action_global_pageFragment"
-        app:destination="@id/pageFragment"
+        app:destination="@id/firstFragment"
         app:enterAnim="@anim/nav_default_enter_anim"
         app:exitAnim="@anim/nav_default_exit_anim"
         app:popEnterAnim="@anim/nav_default_pop_enter_anim"
